@@ -1,8 +1,9 @@
-import { buildLoaders } from "./buildLoaders";
-import { buildPlugins } from "./buildPlugins";
-import { buildResolvers } from "./buildResolvers";
-import { BuildOptions } from "./types/config";
-import webpack from "webpack";
+import { buildDevServer } from './buildDevServer';
+import { buildResolvers } from './buildResolvers';
+import { buildLoaders } from './buildLoaders';
+import { buildPlugins } from './buildPlugins';
+import { BuildOptions } from './types/config';
+import webpack from 'webpack';
 
 export function buildWebpackConfig(
     options: BuildOptions
@@ -14,7 +15,7 @@ export function buildWebpackConfig(
         entry: paths.entry, // Specifies the entry (from where to start)
         output: {
             // Where to save minimized files
-            filename: "[name].[contenthash].js",
+            filename: '[name].[contenthash].js',
             path: paths.build,
             clean: true,
         },
@@ -24,5 +25,7 @@ export function buildWebpackConfig(
             rules: buildLoaders(),
         },
         resolve: buildResolvers(),
+        devtool: 'inline-source-map',
+        devServer: buildDevServer(options),
     };
 }
