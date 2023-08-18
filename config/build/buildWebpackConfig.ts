@@ -22,7 +22,7 @@ export function buildWebpackConfig(
         plugins: buildPlugins(options),
         module: {
             // Section for loaders. Loaders are needed for working with other type of files (.css, .png, .jpeg, .scss, ...)
-            rules: buildLoaders(),
+            rules: buildLoaders(options),
         },
         resolve: buildResolvers(),
         devtool: isDev ? 'inline-source-map' : undefined,
