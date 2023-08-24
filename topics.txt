@@ -1,0 +1,6 @@
+Code Splitting:
+https://legacy.reactjs.org/docs/code-splitting.html
+
+ - During bundle, creates separate files for each lazy components
+listed in <Routes />. This is useful in key that it loads only those
+components we trying to get access.
