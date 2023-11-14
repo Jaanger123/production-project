@@ -1,8 +1,8 @@
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import MiniExtractLoader from 'mini-css-extract-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import { BuildOptions } from './types/config';
 import webpack from 'webpack';
+import { BuildOptions } from './types/config';
 
 export function buildPlugins({
     paths,
@@ -24,7 +24,8 @@ export function buildPlugins({
     ];
 
     if (isDev) {
-        plugins.push(new ReactRefreshWebpackPlugin()); // Display changes in browser without refreshing tab
+        // Display changes in browser without refreshing tab
+        plugins.push(new ReactRefreshWebpackPlugin());
     }
 
     return plugins;

@@ -7,10 +7,10 @@ import { Button, ButtonTheme } from 'shared';
 import cls from './ThemeSwitcher.module.scss';
 
 interface ThemeSwitcherProps {
-    className?: string;
+    className?: string
 }
 
-const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
+const ThemeSwitcher = ({ className = '' }: ThemeSwitcherProps) => {
     const { theme, toggleTheme } = useTheme();
 
     return (

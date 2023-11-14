@@ -1,9 +1,9 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTheme } from './providers/ThemeProvider';
-import { AppRouter } from './providers/router';
 import { Sidebar } from 'widgets/Sidebar';
 import { Navbar } from 'widgets/Navbar';
 import { Suspense } from 'react';
+import { AppRouter } from './providers/router';
+import { useTheme } from './providers/ThemeProvider';
 
 import './styles/index.scss';
 
