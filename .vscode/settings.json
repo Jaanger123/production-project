@@ -1,14 +1,17 @@
 {
     "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
     "i18n-ally.keystyle": "flat",
+    "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
     },
     "eslint.validate": ["javascript"],
-    "eslint.codeActionsOnSave.rules": null,
     "i18n-ally.indent": 4,
-    "prettier.tabWidth": 4,
     "editor.insertSpaces": true,
     "editor.detectIndentation": true,
-    "editor.formatOnSave": false
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "stylelint.validate": ["scss"]
 }
