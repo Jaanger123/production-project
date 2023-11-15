@@ -8,5 +8,5 @@ components we trying to get access.
 Used Linters:
  - ESLint:
        Used Plugins for ESLint:
-        - eslint-plugin-i18next
+        - eslint-plugin-i18next (Linting markup text)
  - StyleLint
