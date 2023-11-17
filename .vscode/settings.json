@@ -8,6 +8,7 @@
     },
     "eslint.validate": ["javascript"],
     "i18n-ally.indent": 4,
+    "i18n-ally.sourceLanguage": "ru",
     "editor.insertSpaces": true,
     "editor.detectIndentation": true,
     "css.validate": false,

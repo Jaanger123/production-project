@@ -1,5 +1,7 @@
 {
     "Тестовый пример": "Test example",
     "Язык": "English",
-    "Главная": "Main"
+    "Главная": "Main",
+    "Сайдбар": "Toggle",
+    "page-not-found": "Page not found"
 }
