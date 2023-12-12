@@ -1,6 +1,11 @@
 {
-    "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
-    "i18n-ally.keystyle": "flat",
+    "i18n-ally.localesPaths": ["./public/locales/", "src/shared/config/i18n"],
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.sourceLanguage": "en",
+    "i18n-ally.displayLanguage": "en",
+    "i18n-ally.sortKeys": true,
+    "i18n-ally.keepFulfilled": true,
+    "i18n-ally.enabledParsers": ["json"],
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true,
@@ -8,7 +13,6 @@
     },
     "eslint.validate": ["javascript"],
     "i18n-ally.indent": 4,
-    "i18n-ally.sourceLanguage": "ru",
     "editor.insertSpaces": true,
     "editor.detectIndentation": true,
     "css.validate": false,
