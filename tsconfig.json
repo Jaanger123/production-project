@@ -30,7 +30,7 @@
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
         "paths": {
-            "*": ["./src/*"]
+            "*": ["./src/*"],
         }
     },
     "ts-node": {
@@ -42,5 +42,6 @@
         "./src/**/*.ts",
         "./src/**/*.tsx",
         "./config/jest/setupTests.ts"
-    ]
+    ],
+    "exclude": ["node_modules"],
 }
