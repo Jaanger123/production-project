@@ -23,14 +23,12 @@ export function buildPlugins({
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
         }),
-        new BundleAnalyzerPlugin({
-            openAnalyzer: false,
-        }),
     ];
 
     if (isDev) {
         // Display changes in browser without refreshing tab
         plugins.push(new ReactRefreshWebpackPlugin());
+        plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
     }
 
     return plugins;
