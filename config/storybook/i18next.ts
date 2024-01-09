@@ -29,7 +29,6 @@ i18n.use(initReactI18next)
     .use(LanguageDetector)
     .use(Backend)
     .init({
-        // debug: true,
         lng: 'en',
         fallbackLng: 'en',
         defaultNS: 'translation',
