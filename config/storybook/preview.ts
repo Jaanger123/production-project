@@ -9,22 +9,22 @@ import { Theme } from '../../src/app/providers/ThemeProvider';
 import i18n from './i18next';
 
 const preview: Preview = {
-    globalTypes: {
-        locale: {
-            name: 'Locale',
-            description: 'Internationalization locale',
-            toolbar: {
-                icon: 'globe',
-                items: [
-                    { value: 'en', title: 'English' },
-                    { value: 'ru', title: 'Русский' },
-                ],
-                showName: true,
-            },
-        },
-    },
+    // globalTypes: {
+    //     locale: {
+    //         name: 'Locale',
+    //         description: 'Internationalization locale',
+    //         toolbar: {
+    //             icon: 'globe',
+    //             items: [
+    //                 { value: 'en', title: 'English' },
+    //                 { value: 'ru', title: 'Русский' },
+    //             ],
+    //             showName: true,
+    //         },
+    //     },
+    // },
     parameters: {
-        i18n,
+        // i18n,
         actions: { argTypesRegex: '^on[A-Z].*' },
         controls: {
             matchers: {
@@ -33,7 +33,7 @@ const preview: Preview = {
             },
         },
     },
-    decorators: [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouterDecorator, LanguageDecorator],
+    decorators: [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouterDecorator],
 };
 
 export default preview;
