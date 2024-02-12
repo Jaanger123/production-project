@@ -5,8 +5,6 @@ import { Suspense } from 'react';
 import { AppRouter } from './providers/router';
 import { useTheme } from './providers/ThemeProvider';
 
-import './styles/index.scss';
-
 const App = () => {
     const { theme } = useTheme();
 
